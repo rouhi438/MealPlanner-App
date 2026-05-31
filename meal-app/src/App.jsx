@@ -1,5 +1,3 @@
-import React from "react";
-
 const MealCard = () => {
   const meal = {
     strMeal: "Crema Catalana",
