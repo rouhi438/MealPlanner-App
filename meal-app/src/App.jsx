@@ -1,3 +1,6 @@
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+
 const MealCard = () => {
   const meal = {
     strMeal: "Crema Catalana",
@@ -30,11 +33,13 @@ const MealCard = () => {
   ];
 
   return (
-    <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 my-6 font-sans">
-      {/* Banner */}
-      <div className="relative h-64 w-full bg-gray-200">
-        <img
-          className="h-full w-full object-cover"
+    <>
+      <Navbar />
+      <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 my-6 font-sans">
+        {/* Banner */}
+        <div className="relative h-64 w-full bg-gray-200">
+          <img
+            className="h-full w-full object-cover"
           src={meal.strMealThumb}
           alt={meal.strMeal}
         />
@@ -114,7 +119,11 @@ const MealCard = () => {
         </div>
       </div>
     </div>
+      <Footer />
+    </>
   );
 };
+
+
 
 export default MealCard;
