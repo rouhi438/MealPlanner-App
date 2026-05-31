@@ -1,0 +1,101 @@
+.meal-card {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.meal-card:hover {
+    transform: translateY(-4px);
+}
+
+.meal-hero {
+    position: relative;
+}
+
+.meal-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.meal-category {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.meal-content {
+    padding: 2rem;
+}
+
+.meal-name {
+    margin: 0 0 1.5rem;
+    font-size: 2rem;
+    color: #222;
+}
+
+.meal-ingredients h3,
+.meal-instructions h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredients-item {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background: #f7f7f7;
+    border-radius: 10px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.instructions-list {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.instructions-list li {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.separator {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}
+
+.ref-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.ref-link {
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    background: #ff6b35;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
