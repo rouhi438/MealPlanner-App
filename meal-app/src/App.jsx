@@ -1,7 +1,6 @@
 import React from "react";
 
 const MealCard = () => {
-  // Захардкоженные данные рецепта
   const meal = {
     strMeal: "Crema Catalana",
     strCategory: "Dessert",
@@ -12,7 +11,6 @@ const MealCard = () => {
     strSource: "https://www.bbcgoodfood.com/recipes/crema-catalana",
   };
 
-  // Чистый массив ингредиентов без пустых полей API
   const ingredientsList = [
     { name: "Milk", measure: "400ml" },
     { name: "Double Cream", measure: "150ml" },
@@ -25,7 +23,6 @@ const MealCard = () => {
     { name: "Corn Flour", measure: "45g" },
   ];
 
-  // Массив шагов, разбитый для красивых отступов
   const instructionsParagraphs = [
     "step 1\nPut the milk, cream, cinnamon stick and all the citrus zest in a saucepan set over a medium heat. Cook, stirring often, until the milk is just steaming but not boiling, about 3-5 mins. Remove from the heat, cover with a plate and leave to infuse for at least 30 mins.",
     "step 2\nWhen the cream mixture has infused, whisk the egg yolks, sugar and cornflour together in a separate bowl for 3-5 mins, or until light and pale in colour. Pour the infused milk through a sieve into the egg mixture, whisking continuously. Return the mixture to the saucepan.",
